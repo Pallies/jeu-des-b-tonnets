@@ -1,0 +1,29 @@
+{
+  "name": "Jeu_des_batonnets",
+  "version": "1.0.0",
+  "description": "cours Diginamic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pallies/jeu-des-b-tonnets"
+  },
+  "author": "yvan Palliès",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pallies/jeu-des-b-tonnets"
+  },
+  "homepage": "https://github.com/Pallies/workshop-html#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.5.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "popper": "^1.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

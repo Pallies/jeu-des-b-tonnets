@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu des Batons</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <header>
+    <nav class="navbar navbar-dark bg-dark" style="text-align: center">
+      <a class="navbar-brand col-12" style="color: goldenrod" href="#"
+        >Le Jeu des Batons</a
+      >
+      <ul class="nav nav-pills bg-dark col-12 justify-content-center">
+        <li class="nav-item nav-item1">
+          <a class="nav-link" id="score-joueur"></a>
+        </li>
+        <li class="nav-item justify-self-strech nav-item2">
+          <button
+            id="new-game"
+            class="nav-link active"
+            data-bs-toggle="tab"
+            onclick="deletedBaton(1,true)"
+          >
+            Nouvelle Partie
+          </button>
+        </li>
+        <li class="nav-item nav-item3">
+          <a class="nav-link" id="score-ia">10</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid d-flex">
+      <section class="col-3 joueur-box">
+        <div
+          id="partie-joueur"
+          class="
+            container
+            d-flex
+            justify-content-center
+            align-items-end
+            tour-de-jeu
+          "
+          style="height: 100%"
+        >
+          Joueur
+        </div>
+      </section>
+      <section class="col-6">
+        <div class="container baton_box">
+          <div class="row mt-3 py-4">
+            <h3 class="message-tour d-block text-center"></h3>
+          </div>
+          <div
+            class="row bg-light border border-top justify-content-center mt-5"
+          >
+            <div
+              class="
+                baton_content
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+              style="height: 200px"
+            ></div>
+          </div>
+          <div
+            class="row py-5 mx-auto mw-100 text-ia"
+            style="width: max-content; height: 3em"
+          ></div>
+          <div class="row justify-content-between pt-3">
+            <button
+              id="btn-baton-1"
+              type="button"
+              class="btn btn-primary col-3"
+              onclick="deletedBaton(1)"
+            >
+              1
+            </button>
+            <button
+              id="btn-baton-2"
+              type="button"
+              class="btn btn-primary col-3"
+              onclick="deletedBaton(2)"
+            >
+              2
+            </button>
+            <button
+              id="btn-baton-3"
+              type="button"
+              class="btn btn-primary col-3"
+              onclick="deletedBaton(3)"
+            >
+              3
+            </button>
+          </div>
+          <div class="row my-3 justify-content-end" style="color: grey">
+            *Cliquez sur le bouton de votre choix
+          </div>
+        </div>
+      </section>
+      <section class="col-3 joueur-box">
+        <div
+          id="partie-ia"
+          class="container d-flex justify-content-center align-items-end"
+          style="height: 100%"
+        >
+          IA
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="message-end text-center h-100"></div>
+  </footer>
+  <body>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./script/programme.js"></script>
+    <script src="./script/tactique-ia.js"></script>
+    <script src="./script/baton-factory.js"></script>
+    <script src="./script/initialized.js"></script>
+  </body>
+</html>

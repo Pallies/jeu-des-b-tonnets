@@ -1,0 +1,91 @@
+.navbar-brand {
+  height: 5rem;
+  font-size: xx-large;
+  text-transform: uppercase; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(34, 34, 51, 0.24);
+  overflow: hidden; }
+
+main {
+  height: 50%;
+  display: flex;
+  margin: 4em auto; }
+
+ul {
+  font-size: 1.5em; }
+  ul .nav-item {
+    border: 5px solid goldenrod; }
+    ul .nav-item1, ul .nav-item2 {
+      border-right: #223; }
+    ul .nav-item3, ul .nav-item2 {
+      border-left: #223; }
+    ul .nav-item1 #score-joueur,
+    ul .nav-item3 #score-ia {
+      color: crimson !important;
+      background-color: azure;
+      padding: 1.5em;
+      font-weight: bolder; }
+    ul .nav-item #new-game {
+      padding: 1.5em;
+      display: inline-block;
+      width: 100%;
+      height: 100%; }
+      ul .nav-item #new-game:not(.active) {
+        cursor: pointer;
+        color: goldenrod; }
+
+.icon {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #223;
+  transform: rotate(90deg); }
+
+.icon-display {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: ghostwhite !important;
+  transform: rotate(90deg); }
+
+.tour-de-jeu {
+  border: 0.2em solid aquamarine; }
+
+section.joueur-box {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: azure; }
+  section.joueur-box #partie-ia {
+    background: url("./../images/xiaomi-ia-4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    background-position: center;
+    transform: translate(0.2em, 0.1em); }
+  section.joueur-box #partie-joueur {
+    background: url("./../images/berger-australien.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    background-position: center;
+    transform: translate(-0.2em, -0.1em); }
+
+.baton_box h3 {
+  height: 1px; }
+
+footer {
+  height: 25%;
+  background-color: #223; }
+  footer .message-end {
+    text-transform: uppercase;
+    padding-top: 1em;
+    color: goldenrod;
+    font-size: 5rem; }
